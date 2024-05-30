@@ -1,0 +1,39 @@
+/* h1{
+    color: orangered;
+} */
+
+/* Tag */
+
+/* h1{
+    color: blue;
+} */
+
+/* ID */
+#heading-1{
+    color: red;
+}
+
+#heading-2{
+    color: green;
+}
+
+/* Class */
+
+.heading{
+    color: brown;
+}
+
+h3{
+    color: rgba(14, 84, 178, 1);
+}
+
+
+.box{
+  border: 5px solid green;    
+  padding: 50px;
+  margin: 50px;
+  
+  /* margin-bottom: ; */
+
+  /* Task Shorthand property */
+}
