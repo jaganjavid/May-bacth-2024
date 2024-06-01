@@ -1,0 +1,60 @@
+
+.parent{
+
+    /* display: block; */
+    display: flex;
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    justify-content: space-between;  
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    height: 600px;
+
+}
+
+
+.parent > div{
+    width: 200px;
+    /* flex-basis: 200px; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    height: 200px;
+    background-color: blue;
+    font-size: 20px;
+    color: #ffffff;
+    /* align-self: center; */
+}
+
+.parent > div:nth-child(1){
+    background-color: green;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* order: 3; */
+    align-self: flex-start;
+    
+}
+.parent > div:nth-child(2){
+    background-color: #800053;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+    /* order: 1; */
+    align-self: center;
+}
+.parent > div:nth-child(3){
+    background-color: #803e00;
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+    /* order: 2; */
+    align-self: flex-end;
+}
