@@ -18,6 +18,10 @@ a{
     margin: 0px auto;
 }
 
+.text-break{
+    display: block;
+}
+
 header{
     background-color: #750DB5;
 }
@@ -43,14 +47,22 @@ header{
     margin: 0px;
 } */
 
+.banner{
+    padding: 100px 0px;
+}
+
 .banner-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.banner-wrapper>div{
+    width: 50%;
+}
+
 .banner-wrapper h1{
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 600;
 }
 
@@ -58,4 +70,133 @@ header{
     margin: 30px 0px;
     color: #505050;
     line-height: 30px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn a:first-child{
+    background-color: #FFA92C;
+    padding: 15px 30px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.btn a:last-child{
+   color: #14121F;
+   font-weight: 600;
+}
+
+.the-jobs{
+    padding: 100px 0px;
+}
+
+.the-jobs h2{
+    margin-bottom: 30px;
+}
+
+.the-jobs-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.the-jobs-wrapper>div{
+    padding: 30px;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.the-jobs-wrapper > div > span{
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+.the-jobs-wrapper> div > p{
+    margin-bottom: 15px;
+}
+
+.the-jobs-wrapper > div >div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.the-jobs-wrapper > div > div a{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: all .30s;
+}
+
+.the-jobs-wrapper > div > div a:hover{
+    background-color: #FFA92C;
+    color: #333333;
+}
+
+.the-jobs-wrapper > div:nth-child(1){
+    background-color: #0C445C;
+}
+.the-jobs-wrapper > div:nth-child(2){
+    background-color: #5B2C98;
+}
+.the-jobs-wrapper > div:nth-child(3){
+    background-color: #7F3219;
+}
+
+footer{
+    padding: 20px 0px;
+    background-color: #D6D6D6;
+}
+
+footer p{
+    text-align: center;
+    color: #4254F4;
+}
+
+@media only screen and (min-width: 1200px){
+    .banner-wrapper h1{
+        font-size: 48px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .header-wrapper{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }   
+
+    .header-wrapper nav{
+        justify-content: center;
+    }
+
+    .text-break{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+   .banner-wrapper{
+    flex-direction: column;
+   }
+
+   .banner-wrapper>div{
+    width: 100%;
+   }
+
+   .banner-wrapper>div:first-child{
+    text-align: center;
+   }
+
+   .btn{
+    justify-content: center;
+    margin-bottom: 30px;
+   }
 }
