@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Common Classes */
+
+.container{
+    max-width: 1125px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sec-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sec-heading h2{
+ margin-bottom: 15px;
+}
+
+main{
+    background: url("../img/banner/bg.svg") no-repeat center;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: cover;
+}
+
+
+/* Header Start */
+
+header{
+    padding: 20px 0px;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-wrapper nav {
+    display: flex;
+    gap: 35px;
+}
+
+.header-wrapper nav a {
+    color: #ffffff;
+}
+
+/* Header End */
+
+
+/* Banner Start */
+
+
+.banner-wrapper{
+    text-align: center;
+    color: #ffffff;
+    padding: 100px 0px;
+   
+}
+
+.banner-wrapper h1{
+    font-size: 50px;
+}
+
+.banner-wrapper p{
+    margin: 65px 0px 75px 0px;
+}
+
+.banner-wrapper a{
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #231A36;
+    gap: 20px;
+    border-radius: 50px;
+}
+
+/* Banner End */
+
+/* Clients Start */
+
+.clients{
+    padding: 30px 0px;
+}
+
+.clients h6{
+    text-align: center;
+    color: #B2B7BE;
+    margin-bottom: 30px;
+}
+
+.clients-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients-wrapper > div{
+    text-align: center;
+}
+/* Clients End */
+
+/* Solution Start */
+
+.solution{
+    padding: 100px 0px;
+}
+
+.solution-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.solution-wrapper > div{
+    width: 50%;
+}
+
+.solution .container{
+    width: 750px;
+}
+
+.solution-wrapper > div:last-child{
+    text-align: right;
+}
+
+
+/* Solution End */
+
+@media only screen and (min-width: 1200px) {
+
+    .banner-wrapper h1{
+        font-size: 94px;
+    }
+
+    .text-break{
+       display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .clients-wrapper > div{
+        width: 33.3%;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .header-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .clients-wrapper > div{
+        width: 50%;
+    }
+
+
+}
