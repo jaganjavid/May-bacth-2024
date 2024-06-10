@@ -24,6 +24,18 @@ a{
 .sec-heading{
     text-align: center;
     margin-bottom: 50px;
+    
+}
+
+.sec-heading h2{
+    display: inline-block;
+    position: relative;
+}
+
+.sec-heading img{
+    position: absolute;
+    top: -40px;
+    right: -60px;
 }
 
 .sec-heading h2{
@@ -131,15 +143,50 @@ header{
 }
 
 .solution .container{
-    width: 750px;
+    max-width: 750px;
 }
 
 .solution-wrapper > div:last-child{
     text-align: right;
 }
 
+.solution-wrapper:not(:last-child){
+    margin-bottom: 50px;
+}
+
+/* p{
+    font-size: 50px;
+    font-weight: 700;
+} */
+
+/* .solution-wrapper:last-child{
+    margin-bottom: 0px;
+} */
+
+
 
 /* Solution End */
+
+
+/* Happy Start */
+.happy{
+    padding: 100px 0px;
+}
+
+.happy-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.happy-wrapper>div:last-child{
+    text-align: right;
+}
+
+.happy-wrapper>div p{
+    margin-bottom: 50px;
+}
+
+/* Happy End */
 
 @media only screen and (min-width: 1200px) {
 
@@ -154,12 +201,54 @@ header{
 }
 
 
+@media only screen and (min-width: 768px) {
+
+    .solution>div:last-child>div:nth-child(2)>div:first-child{
+        order: 2;
+    }
+
+    .solution>div:last-child>div:nth-child(2)>div:last-child{
+        order: 1;
+        text-align: left;
+    }
+
+    .happy-wrapper>div{
+        width: 50%;
+    }
+     
+}
+
+
 @media only screen and (max-width: 768px) {
 
     .clients-wrapper > div{
         width: 33.3%;
     }
+
+    .solution-wrapper{
+        flex-direction: column;
+    }
+
+    .solution-wrapper > div:first-child{
+        text-align: center;
+    }
+
+    .solution-wrapper > div:last-child {
+        text-align: center;
+    }
+
+    .solution-wrapper img{
+        width: 100%;
+    }
+
+    .happy-wrapper{
+        text-align: center;
+        flex-direction: column;
+    }
     
+    .happy-wrapper img{
+        margin-top: 100px;
+    }
 
 
 }
