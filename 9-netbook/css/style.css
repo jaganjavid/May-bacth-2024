@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1180px;
+}
+
+/* Banner start */
+.banner{
+    padding: 100px 0px;
+}
+/* Banner end */
