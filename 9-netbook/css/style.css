@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+ul{
+    padding: 0px;
+    list-style: none;
+}
+
+h1, h2, h3,h4,h5,h6{
+    margin: 0px;
+}
+
 a{
     text-decoration: none;
 }
@@ -11,9 +20,49 @@ a{
 .container{
     max-width: 1180px;
 }
-
-/* Banner start */
-.banner{
+.banner,
+.awwwards,
+.community{
     padding: 100px 0px;
 }
-/* Banner end */
+
+/* social Start */
+.social-wrapper ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+/* social End */
+
+
+/* awwwards start */
+
+
+.awwwards-wrapper > div > div > div{
+  box-shadow: 0px 4px 4px 0px #0000002b;
+  border-radius: 20px;
+}
+/* awwwards end */
+
+/* community Start */
+
+.community{
+    /* background: url("../img/community/bg.png") no-repeat center;
+    
+    background-size: cover; */
+    background: linear-gradient(0deg, #F4F9FF 14%, #F1F6FD 30%, #F1F6FD 64%, #ffffff 100%);
+}
+
+.community-wrapper>div>div>div{
+    padding: 30px;
+    box-shadow: 14px 22px 52px -12px #7f7f7f2b;
+}
+
+/* community End */
+
+@media only screen and (min-width: 768px) {
+    .awwwards-wrapper > div > div > div{
+        width: 90%;
+      }
+  }

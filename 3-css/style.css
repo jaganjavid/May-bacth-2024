@@ -104,3 +104,22 @@ button:hover{
     width: 250px;
     border: 2px solid green;
 }
+
+.parent > div{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+.parent div:nth-child(1){
+    background-color: blue;
+}
+
+.parent div:nth-child(2){
+    background-color: orangered;
+}
+
+.parent div:nth-child(3){
+    background-color: green;
+}

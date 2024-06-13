@@ -1,0 +1,49 @@
+
+
+.parent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent > div{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+@media only screen and (min-width: 1200px) {
+    .parent > div:nth-child(1){
+       background-color: green;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .parent > div:nth-child(2){
+       background-color: orangered;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .parent > div:nth-child(3){
+       background-color: brown;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .parent > div:nth-child(1){
+       background-color: green;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .parent > div:nth-child(2){
+       background-color: orangered;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .parent > div:nth-child(3){
+       background-color: brown;
+    }
+}
