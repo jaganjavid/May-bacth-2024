@@ -40,7 +40,24 @@ val = firstName.charAt("2");
 // Get a lastIndex
 val = firstName.charAt(Math.abs(-1));
 
+// Slice
 
+const fruits = "Orange";
+
+val = fruits.slice(1,3);
+
+// Split() == if char not match it return a string var value
+const str = "Hello im Jagan and Im a Web Dev";
+const tags = "WEBDEV,UIUX,APPPDEV";
+
+val = str.split(" ");
+val = tags.split(" ");
+
+// Replace
+val = str.replace("Jagan", "Javid");
+
+// Include
+val = str.includes("jagan");
 
 
 console.log(val);
