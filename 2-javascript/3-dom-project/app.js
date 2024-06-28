@@ -13,6 +13,9 @@ function loadEventListeners(){
     // Add Task Event
     form.addEventListener("submit", addTask);
 
+    // Remove Task Event
+    taskList.addEventListener("click", removeTask);
+
     // Clear Task
     clearBtn.addEventListener("click", clearTask);
 
@@ -52,18 +55,72 @@ function addTask(e){
         // Add li to ul
         taskList.appendChild(li);
 
+        // Store in LS
+        storeTaskInLocalStorage(taskInput.value);
+
         taskInput.value = "";
+
+    }
+
+}
+
+
+function storeTaskInLocalStorage(task){
+    
+    let tasks;
+
+    if(localStorage.getItem("tasks") === null){
+
+        tasks = [];
+
+        tasks.push(task);
+
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+
+        console.log("Step 1");
+        
+    } else {
+
+        tasks = JSON.parse(localStorage.getItem("tasks"));
+
+        tasks.push(task);
+
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+
+        console.log("Step 2");
 
     }
 
 
 }
 
+function removeTask(e){
+    // i>a
+//   if(e.target.parentElement.className === "delete-item secondary-content"){
+
+//          // e.i.a.li.remove();
+        
+//          if(confirm("Are you sure?")){
+//             e.target.parentElement.parentElement.remove();
+//          }
+//   } 
+
+    if(e.target.parentElement.classList.contains("delete-item")){
+
+        if(confirm("Are you sure?")){ 
+            e.target.parentElement.parentElement.remove();
+        }
+
+    }
+
+}
+
+
 function clearTask(){
 
     
     // The ul
-    // document.querySelector(".collection").innerHTML = null;
+    // document.queryx
     // document.querySelector(".collection").innerHTML = "";
 
 
