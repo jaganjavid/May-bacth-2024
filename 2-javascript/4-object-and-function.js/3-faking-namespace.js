@@ -18,7 +18,7 @@
 // console.log(english.greet);
 // console.log(tamil.greet);
 
-const language = {
+var language = {
     english:{
         greet: "Hello"
     },
