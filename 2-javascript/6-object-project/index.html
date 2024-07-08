@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h1 class="display-4 my-4">
+                Book Way
+            </h1>
+
+            <button class="btn btn-dark" id="clear">
+                Clear All
+            </button>
+        </div>
+
+        <!-- Own Alert -->
+
+        <div class="alert alert-success">You Added book successfully</div>
+        <div class="alert alert-danger">Please fill the fields</div>
+
+
+        <form id="book-form" class="mb-4">
+            <div class="form-floating mb-4">
+                <input type="text" class="form-control" id="title" placeholder="Add title for your book" value="test">
+                <label for="title">Title</label>
+            </div>
+
+            <div class="form-floating mb-4">
+                <input type="text" class="form-control" id="author" placeholder="Add author for your book" value="test">
+                <label for="author">Author</label>
+            </div>
+
+            <div class="form-floating mb-4">
+                <input type="number" class="form-control" id="isbn" placeholder="Add isbn for your book" value="1234">
+                <label for="isbn">isbn</label>
+            </div>
+
+            <button type="submit" class="btn btn-dark" id="test">
+                Add
+            </button>
+        </form>
+
+
+        <table class="table table-hover">
+
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="book-list">
+                <tr>
+                    <td>Web dev</td>
+                    <td>Jagan</td>
+                    <td>1234</td>
+                    <td>
+                        <span class="btn btn-danger">X</span>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
