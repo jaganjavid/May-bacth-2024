@@ -23,23 +23,25 @@
 
         <!-- Own Alert -->
 
-        <div class="alert alert-success">You Added book successfully</div>
-        <div class="alert alert-danger">Please fill the fields</div>
+        <div class="show-alert"></div>
+
+        <!-- <div class="alert alert-success">You Added book successfully</div>
+        <div class="alert alert-danger">Please fill the fields</div> -->
 
 
         <form id="book-form" class="mb-4">
             <div class="form-floating mb-4">
-                <input type="text" class="form-control" id="title" placeholder="Add title for your book" value="test">
+                <input type="text" class="form-control" id="title" placeholder="">
                 <label for="title">Title</label>
             </div>
 
             <div class="form-floating mb-4">
-                <input type="text" class="form-control" id="author" placeholder="Add author for your book" value="test">
+                <input type="text" class="form-control" id="author" placeholder="">
                 <label for="author">Author</label>
             </div>
 
             <div class="form-floating mb-4">
-                <input type="number" class="form-control" id="isbn" placeholder="Add isbn for your book" value="1234">
+                <input type="number" class="form-control" id="isbn" placeholder="">
                 <label for="isbn">isbn</label>
             </div>
 
@@ -65,7 +67,7 @@
                     <td>Web dev</td>
                     <td>Jagan</td>
                     <td>1234</td>
-                    <td>
+                    <td class="delete">
                         <span class="btn btn-danger">X</span>
                     </td>
                 </tr>
