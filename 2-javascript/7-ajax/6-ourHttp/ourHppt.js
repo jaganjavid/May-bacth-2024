@@ -16,18 +16,15 @@ OurHttp.prototype.get = function(url, callback){
     let self = this;
 
     this.http.onload = function(){
-
-        // Window
-        // console.log(this);
-
     
-        if(self.http.status === 200){
+        if(this.status === 200){
 
-            callback(self.http.responseText);
+            callback(this.responseText);
 
         } else {
             callback(`404`);
         }
+
 
     }
 

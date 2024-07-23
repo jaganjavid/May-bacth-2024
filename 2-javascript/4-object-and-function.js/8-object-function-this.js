@@ -26,10 +26,15 @@ var c = {
 
         console.log(this); // c 
         
-        var javid = this; //c
+        var self = this; //c
 
         var setName = function(newName){
-            javid.name = newName; 
+
+            // this looks for the window object when we call direct this in a methode function, so im giving reference outside with name called self
+
+            console.log(this);
+
+            self.name = newName; 
         }
 
         setName("This is a Upadated c object");
